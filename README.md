@@ -19,3 +19,4 @@ To do this you will need a fan like this:
     Source of image: https://www.amazon.co.uk/TRIXES-Clear-Acrylic-Cooling-Raspberry/dp/B01BKIQJD2
  
 
+#PS: Feel free to fork, comment, ask, criticism or suggest something to improve this project.
