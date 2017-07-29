@@ -1,7 +1,7 @@
 # Raspberry-Pi-3B-fan-controller
 ---------------------------------
 
-      This is project enable you to control when your Raspberry Pi 3B will turn on the fan, avoiding the annoying noise even in low temperatures.
+   This is project enable you to control when your Raspberry Pi 3B will turn on the fan, avoiding the annoying noise even in low temperatures.
 
 To do this you will need a fan like this:
 
@@ -16,6 +16,6 @@ To do this you will need a fan like this:
 </p>
 
     To power the fan, connect it to the GPIO so RED is on pin 4 (5V to feed) and BLACK is on pin 6 (GND).
-    *Source of image: https://www.amazon.co.uk/TRIXES-Clear-Acrylic-Cooling-Raspberry/dp/B01BKIQJD2</figcaption>
+    *Source of image: https://www.amazon.co.uk/TRIXES-Clear-Acrylic-Cooling-Raspberry/dp/B01BKIQJD2
  
 
