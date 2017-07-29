@@ -14,6 +14,7 @@ To do this you will need a fan like this:
      <img src="how-to-connect.png" width="425"/>
      <figcaption>
        To power the fan, connect it to the GPIO so RED is on pin 4 (5V to feed) and BLACK is on pin 6 (GND).
+       
        *Source of image: https://www.amazon.co.uk/TRIXES-Clear-Acrylic-Cooling-Raspberry/dp/B01BKIQJD2</figcaption>
   </p>
 
