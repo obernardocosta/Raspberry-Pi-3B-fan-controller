@@ -4,7 +4,7 @@ This is project enable you to control when your Raspberry Pi 3B will turn on the
 
 To do this you will need a fan like this:
 
-![alt text](fan.png)
-![alt text](fan-and-raspberry.
+<img src="fan.png" width="425"/> <img src="fan-and-raspberry.png" width="425"/> 
+
 
 Available on: https://www.amazon.com/Adafruit-Miniature-Cooling-Raspberry-Computers/dp/B071H8RCFH/ref=sr_1_15?s=electronics&ie=UTF8&qid=1501299890&sr=1-15&keywords=small+fan+raspberry
