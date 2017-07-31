@@ -61,5 +61,15 @@ Now we can code to control the fan.
 
          exit 0
    
+   bib:
+   ----
+    1 - Basic concepts to GPIO:
+        http://blog.fazedores.com/raspberry-pi-b-introducao-porta-gpio/
+    
+    2 - About raspberry temperature:
+        https://raspberrypi.stackexchange.com/questions/103/whats-the-maximum-minimum-running-temperature
+        
+    And so many others.
+
    
 #PS: Feel free to fork, comment, ask, criticism or suggest something to improve this project.
