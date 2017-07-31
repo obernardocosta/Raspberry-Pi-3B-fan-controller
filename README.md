@@ -15,8 +15,10 @@ To do this you will need a fan like this:
   <img src="Figures/how-to-connect.png" width="425"/>
 </p>
 
+    Source of image: https://www.amazon.co.uk/TRIXES-Clear-Acrylic-Cooling-Raspberry/dp/B01BKIQJD2
+
     To power the fan, connect it to the GPIO so RED is on board pin 4 (5V to feed) and BLACK is on pin 6 (GND). The fan will be turned on with high speed, all time. 
-    Source of image: https://www.amazon.co.uk/TRIXES-Clear-Acrylic-Cooling-Raspberry/dp/B01BKIQJD2
+    
  
  # Switch on/off the fan 
     We can't control 5v pin, so I connect RED on pin 7 (GPIO4), that's enable us to control, and BLACK on pin 9 (GND). See the GPIO scheme below. 
