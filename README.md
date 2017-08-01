@@ -1,9 +1,9 @@
 # Raspberry-Pi-3B-fan-controller
 ---------------------------------
 
-   This is project enable you to control when your Raspberry Pi 3B will turn on the fan, avoiding the annoying noise even in low temperatures.
+   This is project enables you to control when your Raspberry Pi 3B will turn on the fan, avoiding the annoying noise even in low temperatures.
 
-To do this you will need a fan like this:
+To do this you will need a fan (like below), a 5V Relay and 1kΩ.
 
 <p align="center">
   <img src="Figures/fan.png" width="425"/> <img src="Figures/fan-and-raspberry.png" width="425"/> 
@@ -17,21 +17,22 @@ To do this you will need a fan like this:
 
     Source of image: https://www.amazon.co.uk/TRIXES-Clear-Acrylic-Cooling-Raspberry/dp/B01BKIQJD2
 
-    To power the fan, connect it to the GPIO so RED is on board pin 4 (5V to feed) and BLACK is on pin 6 (GND). The fan will be turned on with high speed, all time. 
+    To power, the fan, connect it to the GPIO so RED is on board pin 4 (5V to feed) and BLACK is on pin 6 (GND). The fan will be turned on with high speed, all time. 
     
  
  # Switch on/off the fan 
-    We can't control 5v pin, so I connect RED on pin 7 (GPIO4), that's enable us to control, and BLACK on pin 9 (GND). See the GPIO scheme below. 
+    We can't control 5v pin because it's a voltage feed. To enable us to control the fan, I add a relay on it (small enough to stay inside the raspberry's case) connected to pin 7 (GPIO4), look the scheme below: 
  
 <p align="center">
-  <img src="Figures/pi3_gpio.png" width="425"/>
+  <img src="Figures/relay.png" width="425"/><img src="Figures/pi3_gpio.png" width="425"/>
 </p>
 
-Now we can code to control the fan.
+   When you set 1 to GPI04, the relay's coil turns on, creating an electromagnetic field that closes the gate that 5V is connected, turning on the fan.
+   
 
 # Python script
 
-   In the src's folder you can find the commented python code.
+   In the src's folder, you can find the commented python code.
 
 # Run every time you start up the Raspberry
 
@@ -49,7 +50,7 @@ Now we can code to control the fan.
        #
        # rc.local
        #
-       # This script is executed at the end of each multiuser runlevel.
+       # This script is executed at the end of each multiuser run level.
        # Make sure that the script will "exit 0" on success or any other
        # value on error.
        #
@@ -57,7 +58,7 @@ Now we can code to control the fan.
        # bits.
        #
        # By default this script does nothing.
-       #run fan scrip
+       #run fan script
        
          (sleep 30; python /home/raspberrypi3b/Scripts/run_fan.py) &
 
