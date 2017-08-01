@@ -3,7 +3,7 @@
 
    This is project enables you to control when your Raspberry Pi 3B will turn on the fan, avoiding the annoying noise even in low temperatures.
 
-To do this you will need a fan (like below), a 5V Relay and 1kΩ.
+To do this you will need a fan (like below), a 5V Relay and 1kΩ resistor.
 
 <p align="center">
   <img src="Figures/fan.png" width="425"/> <img src="Figures/fan-and-raspberry.png" width="425"/> 
@@ -28,6 +28,8 @@ To do this you will need a fan (like below), a 5V Relay and 1kΩ.
 </p>
 
    When you set 1 to GPI04, the relay's coil turns on, creating an electromagnetic field that closes the gate that 5V is connected, turning on the fan.
+   
+   The 1kΩ resistor is to protect GPIO4 from high current, don't try to connect without it.
    
 
 # Python script
