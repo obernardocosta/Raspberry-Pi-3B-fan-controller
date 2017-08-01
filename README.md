@@ -24,7 +24,7 @@ To do this you will need a fan (like below), a 5V Relay and 1kΩ.
     We can't control 5v pin because it's a voltage feed. To enable us to control the fan, I add a relay on it (small enough to stay inside the raspberry's case) connected to pin 7 (GPIO4), look the scheme below: 
  
 <p align="center">
-  <img src="Figures/relay.png" width="425"/><img src="Figures/pi3_gpio.png" width="425"/>
+  <img src="Figures/gpio_relay.png" width="425"/>
 </p>
 
    When you set 1 to GPI04, the relay's coil turns on, creating an electromagnetic field that closes the gate that 5V is connected, turning on the fan.
