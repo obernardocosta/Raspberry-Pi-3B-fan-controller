@@ -1,4 +1,4 @@
-# Raspberry-Pi-3B-fan-controller
+# Raspberry-Pi-3B-fan-controller (NOT DONE YET)
 ---------------------------------
 
    This is project enables you to control when your Raspberry Pi 3B will turn on the fan, avoiding the annoying noise even in low temperatures.
